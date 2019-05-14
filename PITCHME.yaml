@@ -1,0 +1,20 @@
+# Layout
+layout : center
+
+# Look-and-Feel
+title: GraphQL Lightning Talk
+logo : assets/images/logo.png
+logo-position : top-left
+footnote: GraphQL Lightning Talk - Steven Atkinson @ Dootrix
+theme : night
+theme-override : assets/css/PITCHME.css
+highlight : ir-black
+code-line-numbers : true
+# code-reveal : true
+
+# Behavior
+transition : slide
+published : false
+
+pro-menus-hidden : true
+print-fragments : true
