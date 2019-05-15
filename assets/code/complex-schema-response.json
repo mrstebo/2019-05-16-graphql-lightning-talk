@@ -1,0 +1,21 @@
+{
+  "data": {
+    "getProducts": [
+      {
+        "id": "1",
+        "name": "Product #1",
+        "description": "This is a description",
+        "price": 34.16,
+        "hidden": true
+      },
+      {
+        "id": "2",
+        "name": "Product #2",
+        "description": "This is a description",
+        "price": 92.66,
+        "hidden": false
+      },
+      ...
+    ]
+  }
+}

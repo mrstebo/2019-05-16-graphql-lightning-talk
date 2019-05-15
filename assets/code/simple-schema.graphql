@@ -1,0 +1,3 @@
+type Query {
+  serverTime: String!
+}
