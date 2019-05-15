@@ -181,3 +181,15 @@
 # @color[#DC143C](Mutations)
 
 ---
+
+@code[graphql](assets/code/simple-mutation-schema.graphql)
+
+@[2](We pass in a  @color[#DC143C](String) and return a  @color[#DC143C](String))
+
+---
+
+@code[js](assets/code/simple-mutation-resolver.js)
+
+@[2](Create the @color[#DC143C](Mutation) property)
+@[3](Create the @color[#DC143C](function) that runs the mutation)
+@[4](This mutation @color[#DC143C](echos) what was passed in)
