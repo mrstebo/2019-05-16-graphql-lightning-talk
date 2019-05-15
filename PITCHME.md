@@ -147,9 +147,9 @@
 
 ---
 
-@code[js code-power](assets/code/complex-resolver-define-type.js)
+@code[js code-max code-noscroll](assets/code/complex-resolver-define-type.js)
 
-@[7-13](Add the type to the resolver)
+@[7-13](Add the @color[#DC143C](type) to the resolver)
 @[8-10](Attributes mapped explicitly to the object properties)
 @[11](Attribute is transformed)
 @[12](Attribute is the result of a condition against another property)
