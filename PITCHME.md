@@ -117,6 +117,9 @@
 
 @code[js](assets/code/simple-resolver.js)
 
+@[5](Create the @color[#DC143C](Query) property)
+@[6](Create the @color[#DC143C](function) to resolver the query)
+
 @snapend
 
 ---
