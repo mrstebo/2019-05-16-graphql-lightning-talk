@@ -9,7 +9,7 @@ const MOCK_PRODUCTS = [...Array(10).keys()].map(i => ({
 const resolver = {
   Query: {
     getProduct: (_, { id }) => {
-      return MOCK_PRODUCTS.find(p => p.id === id)
+      return MOCK_PRODUCTS.find(p => p.id === id);
     },
   },
 };

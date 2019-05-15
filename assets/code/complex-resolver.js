@@ -14,4 +14,4 @@ const resolver = {
       hidden: false,
     }],
   },
-}
+};

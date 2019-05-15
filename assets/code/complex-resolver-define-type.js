@@ -11,4 +11,4 @@ const resolver = {
     price: product => product.price.toFixed(2),
     hidden: product => !product.live,
   }
-}
+};
