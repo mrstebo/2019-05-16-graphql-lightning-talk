@@ -55,11 +55,11 @@
 @snap[east span-70]
 
 @snap[fragment]
-@code[ts](assets/code/simple-schema.graphql)
+@code[graphql](assets/code/simple-schema.graphql)
 @snapend
 
 @snap[fragment]
-@code[json](assets/code/simple-schema-request.graphql)
+@code[graphql](assets/code/simple-schema-request.graphql)
 @snapend
 
 @snapend
@@ -81,22 +81,22 @@
 @snap[east span-70]
 
 @snap[fragment]
-@code[ts](assets/code/complex-schema-1.graphql)
+@code[graphql](assets/code/complex-schema-1.graphql)
 @snapend
 
 @snap[fragment]
-@code[ts](assets/code/complex-schema-2.graphql)
+@code[graphql](assets/code/complex-schema-2.graphql)
 @snapend
 
 @snap[fragment]
-@code[json](assets/code/complex-schema-request.graphql)
+@code[graphql](assets/code/complex-schema-request.graphql)
 @snapend
 
 @snapend
 
 ---
 
-@code[json zoom-06](assets/code/complex-schema-response.json)
+@code[json zoom-06 code-max code-noscroll](assets/code/complex-schema-response.json)
 
 @[3]
 @[5-9,12-16]
@@ -104,5 +104,77 @@
 ---
 
 # @color[#DC143C](Resolvers)
+
+---
+
+@snap[fragment]
+
+@code[graphql](assets/code/simple-schema.graphql)
+
+@snapend
+
+@snap[fragment]
+
+@code[js](assets/code/simple-resolver.js)
+
+@snapend
+
+---
+
+@snap[fragment west span-50]
+
+@code[graphql](assets/code/complex-schema-1.graphql)
+
+@code[graphql](assets/code/complex-schema-2.graphql)
+
+@snapend
+
+@snap[fragment east span-50]
+
+@code[js zoom-06](assets/code/complex-resolver.js)
+
+@snapend
+
+---
+
+### You can
+## @color[#DC143C](EXPLICITLY)
+## @color[#DC143C](DEFINE)
+### types
+
+---
+
+@code[js code-power](assets/code/complex-resolver-define-type.js)
+
+@[7-13](Add the type to the resolver)
+@[8-10](Attributes mapped explicitly to the object properties)
+@[11](Attribute is transformed)
+@[12](Attribute is the result of a condition against another property)
+
+---
+
+### @color[#DC143C](Queries)
+#### with
+## @color[#DC143C](PARAMETERS)
+
+---
+
+@code[graphql](assets/code/query-with-parameter.graphql)
+
+@[2](We have an @color[#DC143C](id) parameter of the type @color[#DC143C](ID))
+@[2](@color[#DC143C](ID!) means that the parameter is @color[#DC143C](required))
+
+---
+
+@code[js zoom-09 code-max code-noscroll](assets/code/resolver-with-parameter.js)
+
+@[1-7](We have some mock products)
+@[11](The second parameter is the @color[#DC143C](parameters) sent to the query)
+@[11](We use destructuring to extract the @color[#DC143C](id) parameter)
+@[12](Then we @color[#DC143C](return the product) with the passed in ID)
+
+---
+
+# @color[#DC143C](Mutations)
 
 ---
