@@ -159,9 +159,9 @@
 
 @code[js zoom-09 code-max code-noscroll](assets/code/resolver-with-parameter.js)
 @[1-7](We have some mock products)
-@[11](The second parameter is the @color[#DC143C](parameters) sent to the query)
-@[11](We use destructuring to extract the @color[#DC143C](id) parameter)
-@[12](Then we @color[#DC143C](return the product) with the passed in ID)
+@[10](The second parameter is the @color[#DC143C](parameters) sent to the query)
+@[10](We use destructuring to extract the @color[#DC143C](id) parameter)
+@[11](Then we @color[#DC143C](return the product) with the passed in ID)
 
 ---
 
