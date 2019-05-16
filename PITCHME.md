@@ -1,6 +1,10 @@
 # @color[#DC143C](GraphQL)
 #### Lightning Talk
 
+@snap[south zoom-06]
+#### Steven Atkinson
+@snapend
+
 ---
 
 ### What is @color[#DC143C](GraphQL)?
@@ -43,6 +47,19 @@
 ---
 
 # @color[#DC143C](Schemas)
+
+---
+
+@snap[zoom-06]
+@ul
+
+- Written in @color[#DC143C](Schema Definition Language) - @color[#DC143C](SDL)
+- Strongly typed
+- Define the API
+- Three root types - @color[#DC143C](Query), @color[#DC143C](Mutation) and @color[#DC143C](Subscription)
+
+@ulend
+@snapend
 
 ---
 
