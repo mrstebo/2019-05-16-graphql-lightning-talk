@@ -216,3 +216,56 @@
 @[3](The @color[#DC143C](name) of the mutation)
 @[4-8](The @color[#DC143C](attributes) that we wanted)
 
+---
+
+## Serverless
+# @color[#DC143C](GraphQL)
+
+---
+
+@snap[north]
+### The Good
+@snapend
+
+@ul
+
+- No need to make multiple requests to fetch data
+- It can be used as an API Gateway
+- It can aggregate data from many sources
+- You can create resolvers that talk to third party APIs
+- The GraphQL playground makes it easy to debug queries and mutations
+- You only get the data you need
+
+@ulend
+
+---
+
+@snap[north]
+### The Bad
+@snapend
+
+@ul
+
+- Every request is a POST - @color[#DC143C](no HTTP caching)
+- GraphQL could become big and bloated - @color[#DC143C](lots of types, queries, mutations etc)
+- It is another @color[#DC143C](new syntax) to learn
+
+@ulend
+
+---
+
+@snap[north]
+### Resources
+@snapend
+
+@snap[zoom-06]
+@ul
+- https://github.com/mrstebo/graphql-serverless-boilerplate
+- https://medium.com/hotels-com-technology/pros-and-cons-of-graphql-2ec9104c74f2
+- https://www.moesif.com/blog/technical/graphql/REST-vs-GraphQL-APIs-the-good-the-bad-the-ugly/#
+@ulend
+@snapend
+
+---
+
+# @color[#DC143C](FIN)
