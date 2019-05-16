@@ -1,0 +1,10 @@
+type Mutation {
+  addProduct(input: ProductInput!): Product
+}
+
+input ProductInput {
+  name: String!
+  description: String!
+  price: Float!
+  hidden: Boolean!
+}

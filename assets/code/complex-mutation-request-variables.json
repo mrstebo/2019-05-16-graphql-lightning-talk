@@ -1,0 +1,8 @@
+{
+  "input": {
+    "name": "My New Product",
+    "description": "Some fancy description",
+    "price": 12.99,
+    "hidden": true
+  }
+}

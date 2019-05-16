@@ -1,0 +1,3 @@
+mutation($x: String) {
+  test(x: $x)
+}

@@ -48,7 +48,7 @@
 
 @snap[fragment]
 @code[graphql](assets/code/simple-schema.graphql)
-@[1](Must set the type to @color[#DC143C](Query))
+@[1](We must set the type to @color[#DC143C](Query))
 @[2](@color[#DC143C](Define) a query and specify a @color[#DC143C](return type))
 @snapend
 
@@ -156,7 +156,8 @@
 ---
 
 @code[graphql](assets/code/simple-mutation-schema.graphql)
-@[2](We pass in a  @color[#DC143C](String) and return a  @color[#DC143C](String))
+@[1](We must set the type to @color[#DC143C](Mutation))
+@[2](We pass in a @color[#DC143C](String) and return a @color[#DC143C](String))
 
 ---
 
@@ -164,3 +165,54 @@
 @[2](Create the @color[#DC143C](Mutation) property)
 @[3](Create the @color[#DC143C](function) that runs the mutation)
 @[4](This mutation @color[#DC143C](echos) what was passed in)
+
+---
+
+@snap[fragment]
+@code[graphql](assets/code/simple-mutation-request.graphql)
+@[1](Specify that you want to run a @color[#DC143C](mutation))
+@[1](Specify the @color[#DC143C](parameters) and @color[#DC143C](types))
+@[2](Specify the @color[#DC143C](mutation) with the @color[#DC143C](parameter))
+@snapend
+
+@snap[fragment]
+@code[graphql](assets/code/simple-mutation-request-variables.json)
+@[4-7](Specify the @color[#DC143C](variables))
+@[5](Set the @color[#DC143C](variable) that will be passed as a @color[#DC143C](parameter) to the mutation)
+@snapend
+
+---
+
+@code[json](assets/code/simple-mutation-response.json)
+@[3](This mutation @color[#DC143C](echos) what was passed in)
+
+---
+
+@code[graphql](assets/code/complex-mutation-schema.graphql)
+@[1](We must set the type to @color[#DC143C](Mutation))
+@[2](@color[#DC143C](Define) a mutation and specify a @color[#DC143C](return type))
+@[4-9](We define a custom @color[#DC143C](input) to pass in to the mutation)
+@[5-8](We specify the @color[#DC143C](attributes) for the input)
+
+---
+
+@snap[fragment]
+@code[graphql](assets/code/complex-mutation-request.graphql)
+@[1](Specify that you want to run a @color[#DC143C](mutation))
+@[1](Specify the @color[#DC143C](parameters) and @color[#DC143C](types))
+@[2](Specify the @color[#DC143C](mutation) with the @color[#DC143C](parameter))
+@[3-7](Specify the @color[#DC143C](attributes) you want)
+@snapend
+
+@snap[fragment]
+@code[json](assets/code/complex-mutation-request-variables.json)
+@[11](Set the @color[#DC143C](variable) that will be passed as a @color[#DC143C](parameter) to the mutation)
+@[12-15](Set the @color[#DC143C](input properties))
+@snapend
+
+---
+
+@code[json](assets/code/complex-mutation-response.json)
+@[3](The @color[#DC143C](name) of the mutation)
+@[4-8](The @color[#DC143C](attributes) that we wanted)
+
