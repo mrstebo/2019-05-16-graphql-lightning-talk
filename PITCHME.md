@@ -1,5 +1,4 @@
 # @color[#DC143C](GraphQL)
-#### Lightning Talk
 
 @snap[south zoom-06]
 #### Steven Atkinson
