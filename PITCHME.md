@@ -46,22 +46,16 @@
 
 ---
 
-@snap[west span-30]
-
-### Queries
-
-@snapend
-
-@snap[east span-70]
-
 @snap[fragment]
 @code[graphql](assets/code/simple-schema.graphql)
+@[1](Must set the type to @color[#DC143C](Query))
+@[2](@color[#DC143C](Define) a query and specify a @color[#DC143C](return type))
 @snapend
 
 @snap[fragment]
 @code[graphql](assets/code/simple-schema-request.graphql)
-@snapend
-
+@[4](Specify that you want to run a @color[#DC143C](query))
+@[5](Specify the @color[#DC143C](query))
 @snapend
 
 ---
@@ -72,35 +66,27 @@
 
 ---
 
-@snap[west span-30]
-
-### Queries
-
-@snapend
-
-@snap[east span-70]
-
 @snap[fragment]
-@code[graphql](assets/code/complex-schema.graphql)
-@[2]
-@[5-11]
-@[6-6,9-10]
-@[1-11]
+@code[graphql zoom-07](assets/code/complex-schema.graphql)
+@[2](Returns an @color[#DC143C](array) of products)
+@[5-11](The @color[#DC143C](type) that is used in the query response)
+@[6-6,9-10](These are @color[#DC143C](required) parameters)
+@[1-11](This is an @color[#DC143C](optional) parameter)
 @snapend
 
 @snap[fragment]
-@code[graphql](assets/code/complex-schema-request.graphql)
-@[13]
-@[14-18]
-@snapend
-
+@code[graphql zoom-07](assets/code/complex-schema-request.graphql)
+@[12](Specify that you want to run a @color[#DC143C](query))
+@[13](Specify the @color[#DC143C](query))
+@[14-18](Specify what @color[#DC143C](attributes) you want)
 @snapend
 
 ---
 
 @code[json zoom-06 code-max code-noscroll](assets/code/complex-schema-response.json)
-@[3]
-@[5-9,12-16]
+@[3](The @color[#DC143C](name) of the @color[#DC143C](query))
+@[3-19](The @color[#DC143C](array) of @color[#DC143C](Products))
+@[5-9,12-16](The @color[#DC143C](attributes) that we wanted)
 
 ---
 
