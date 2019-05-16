@@ -36,9 +36,9 @@
 ---
 
 ### Using
-## @color[#DC143C](resolvers)
-#### and
 ## @color[#DC143C](schemas)
+#### and
+## @color[#DC143C](resolvers)
 
 ---
 
@@ -48,12 +48,18 @@
 
 @snap[fragment]
 @code[graphql](assets/code/simple-schema.graphql)
+@snapend
+
+@snap[south span-100]
 @[1](We must set the type to @color[#DC143C](Query))
 @[2](@color[#DC143C](Define) a query and specify a @color[#DC143C](return type))
 @snapend
 
 @snap[fragment]
 @code[graphql](assets/code/simple-schema-request.graphql)
+@snapend
+
+@snap[south span-100]
 @[4](Specify that you want to run a @color[#DC143C](query))
 @[5](Specify the @color[#DC143C](query))
 @snapend
@@ -62,20 +68,28 @@
 
 @code[json](assets/code/simple-schema-response.json)
 
+@snap[south span-100]
 @[3](Returns the server time as a @color[#DC143C](string))
+@snapend
 
 ---
 
 @snap[fragment]
 @code[graphql zoom-07](assets/code/complex-schema.graphql)
+@snapend
+
+@snap[south span-100]
 @[2](Returns an @color[#DC143C](array) of products)
 @[5-11](The @color[#DC143C](type) that is used in the query response)
 @[6-6,9-10](These are @color[#DC143C](required) parameters)
-@[1-11](This is an @color[#DC143C](optional) parameter)
+@[8](This is an @color[#DC143C](optional) parameter)
 @snapend
 
 @snap[fragment]
 @code[graphql zoom-07](assets/code/complex-schema-request.graphql)
+@snapend
+
+@snap[south span-100]
 @[12](Specify that you want to run a @color[#DC143C](query))
 @[13](Specify the @color[#DC143C](query))
 @[14-18](Specify what @color[#DC143C](attributes) you want)
@@ -84,9 +98,12 @@
 ---
 
 @code[json zoom-06 code-max code-noscroll](assets/code/complex-schema-response.json)
+
+@snap[south span-100]
 @[3](The @color[#DC143C](name) of the @color[#DC143C](query))
 @[3-19](The @color[#DC143C](array) of @color[#DC143C](Products))
 @[5-9,12-16](The @color[#DC143C](attributes) that we wanted)
+@snapend
 
 ---
 
@@ -96,10 +113,10 @@
 
 @snap[fragment]
 @code[graphql](assets/code/simple-schema.graphql)
+@code[js](assets/code/simple-resolver.js)
 @snapend
 
-@snap[fragment]
-@code[js](assets/code/simple-resolver.js)
+@snap[south span-100]
 @[5](Create the @color[#DC143C](Query) property)
 @[6](Create the @color[#DC143C](function) to resolver the query)
 @snapend
@@ -114,6 +131,10 @@
 @code[js zoom-06](assets/code/complex-resolver.js)
 @snapend
 
+@snap[south span-100]
+@[6-10,15-19](Object properties map the type in the schema)
+@snapend
+
 ---
 
 ### You can
@@ -124,10 +145,13 @@
 ---
 
 @code[js code-max code-noscroll](assets/code/complex-resolver-define-type.js)
+
+@snap[south span-100]
 @[7-13](Add the @color[#DC143C](type) to the resolver)
 @[8-10](Attributes mapped explicitly to the object properties)
 @[11](Attribute is transformed)
 @[12](Attribute is the result of a condition against another property)
+@snapend
 
 ---
 
@@ -138,16 +162,22 @@
 ---
 
 @code[graphql](assets/code/query-with-parameter.graphql)
-@[2](We have an @color[#DC143C](id) parameter of the type @color[#DC143C](ID))
+
+@snap[south span-100]
+@[2](The @color[#DC143C](id) parameter of the type @color[#DC143C](ID))
 @[2](@color[#DC143C](ID!) means that the parameter is @color[#DC143C](required))
+@snapend
 
 ---
 
 @code[js zoom-09 code-max code-noscroll](assets/code/resolver-with-parameter.js)
+
+@snap[south span-100]
 @[1-7](We have some mock products)
 @[10](The second parameter is the @color[#DC143C](parameters) sent to the query)
 @[10](We use destructuring to extract the @color[#DC143C](id) parameter)
 @[11](Then we @color[#DC143C](return the product) with the passed in ID)
+@snapend
 
 ---
 
@@ -156,20 +186,29 @@
 ---
 
 @code[graphql](assets/code/simple-mutation-schema.graphql)
+
+@snap[south span-100]
 @[1](We must set the type to @color[#DC143C](Mutation))
 @[2](We pass in a @color[#DC143C](String) and return a @color[#DC143C](String))
+@snapend
 
 ---
 
 @code[js](assets/code/simple-mutation-resolver.js)
+
+@snap[south span-100]
 @[2](Create the @color[#DC143C](Mutation) property)
 @[3](Create the @color[#DC143C](function) that runs the mutation)
 @[4](This mutation @color[#DC143C](echos) what was passed in)
+@snapend
 
 ---
 
 @snap[fragment]
 @code[graphql](assets/code/simple-mutation-request.graphql)
+@snapend
+
+@snap[south span-100]
 @[1](Specify that you want to run a @color[#DC143C](mutation))
 @[1](Specify the @color[#DC143C](parameters) and @color[#DC143C](types))
 @[2](Specify the @color[#DC143C](mutation) with the @color[#DC143C](parameter))
@@ -177,6 +216,9 @@
 
 @snap[fragment]
 @code[graphql](assets/code/simple-mutation-request-variables.json)
+@snapend
+
+@snap[south span-100]
 @[4-7](Specify the @color[#DC143C](variables))
 @[5](Set the @color[#DC143C](variable) that will be passed as a @color[#DC143C](parameter) to the mutation)
 @snapend
@@ -184,20 +226,29 @@
 ---
 
 @code[json](assets/code/simple-mutation-response.json)
+
+@snap[south span-100]
 @[3](This mutation @color[#DC143C](echos) what was passed in)
+@snapend
 
 ---
 
 @code[graphql](assets/code/complex-mutation-schema.graphql)
+
+@snap[south span-100]
 @[1](We must set the type to @color[#DC143C](Mutation))
 @[2](@color[#DC143C](Define) a mutation and specify a @color[#DC143C](return type))
-@[4-9](We define a custom @color[#DC143C](input) to pass in to the mutation)
-@[5-8](We specify the @color[#DC143C](attributes) for the input)
+@[5-10](We define a custom @color[#DC143C](input) to pass in to the mutation)
+@[6-9](We specify the @color[#DC143C](attributes) for the input)
+@snapend
 
 ---
 
 @snap[fragment]
 @code[graphql](assets/code/complex-mutation-request.graphql)
+@snapend
+
+@snap[south span-100]
 @[1](Specify that you want to run a @color[#DC143C](mutation))
 @[1](Specify the @color[#DC143C](parameters) and @color[#DC143C](types))
 @[2](Specify the @color[#DC143C](mutation) with the @color[#DC143C](parameter))
@@ -206,6 +257,9 @@
 
 @snap[fragment]
 @code[json](assets/code/complex-mutation-request-variables.json)
+@snapend
+
+@snap[south span-100]
 @[11](Set the @color[#DC143C](variable) that will be passed as a @color[#DC143C](parameter) to the mutation)
 @[12-15](Set the @color[#DC143C](input properties))
 @snapend
@@ -213,8 +267,11 @@
 ---
 
 @code[json](assets/code/complex-mutation-response.json)
+
+@snap[south span-100]
 @[3](The @color[#DC143C](name) of the mutation)
 @[4-8](The @color[#DC143C](attributes) that we wanted)
+@snapend
 
 ---
 
