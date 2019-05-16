@@ -284,16 +284,18 @@
 ### The Good
 @snapend
 
+@snap[zoom-06]
 @ul
 
 - No need to make multiple requests to fetch data
-- It can be used as an API Gateway
-- It can aggregate data from many sources
 - You can create resolvers that talk to third party APIs
-- The GraphQL playground makes it easy to debug queries and mutations
-- You only get the data you need
+- It can be used as an @color[#DC143C](API Gateway)
+- It can @color[#DC143C](aggregate data) from many sources
+- The @color[#DC143C](GraphQL playground) makes it easy to debug queries and mutations
+- You only get the @color[#DC143C](data you need)
 
 @ulend
+@snapend
 
 ---
 
@@ -301,6 +303,7 @@
 ### The Bad
 @snapend
 
+@snap[zoom-06]
 @ul
 
 - Every request is a POST - @color[#DC143C](no HTTP caching)
@@ -308,6 +311,7 @@
 - It is another @color[#DC143C](new syntax) to learn
 
 @ulend
+@snapend
 
 ---
 
